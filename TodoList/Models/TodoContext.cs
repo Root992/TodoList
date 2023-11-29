@@ -7,9 +7,9 @@ namespace TodoList.Models
     public class TodoContext: DbContext
     {
         public string DbPath { get; }
-        public TodoContext()
+        public TodoContext(DbContextOptions<TodoContext> todoContext): base(todoContext)
         {
-            DbPath = "C:\\Users\\nahuel.berardi\\Desktop\\Code\\Todo.db";
+            DbPath = ".\\Todo.db";
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

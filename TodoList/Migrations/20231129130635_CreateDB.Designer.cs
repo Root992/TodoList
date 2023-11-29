@@ -11,7 +11,7 @@ using TodoList.Models;
 namespace TodoList.Migrations
 {
     [DbContext(typeof(TodoContext))]
-    [Migration("20231127160251_CreateDB")]
+    [Migration("20231129130635_CreateDB")]
     partial class CreateDB
     {
         /// <inheritdoc />
